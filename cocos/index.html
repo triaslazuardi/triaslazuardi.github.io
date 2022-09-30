@@ -38,7 +38,8 @@
 </head>
 <body>
   <script>
-    var noSleep = new NoSleep();
+    window.noSleep = new window.NoSleep();
+    // var noSleep = new NoSleep();
   </script>
 
   <div id="GameDiv" cc_exact_fit_screen="true">
@@ -84,6 +85,9 @@
         isWebComponentsSupported: 'registerElement' in document && 'import' in document.createElement('link') && 'content' in document.createElement('template'),
 		isWebViewAndroid: /wv/.test(navigator.userAgent)
   };
+
+  if(getBrowser.isFirefox)
+    sessionStorage.setItem("statusNoSleep", "1");
 
   // alert("isAppsAndroid : " + navigator.userAgent);
   // alert("isAppsAndroid : " + getBrowser.isAppsAndroid);
