@@ -127,7 +127,7 @@ var NoSleep = function () {
     var _this = this;
 
     _classCallCheck(this, NoSleep);
-    alert("[nosleep] 1");
+    // alert("[nosleep] 1");
     this.enabled = false;
     if (nativeWakeLock()) {
       this._wakeLock = null;
@@ -138,13 +138,13 @@ var NoSleep = function () {
       };
       document.addEventListener("visibilitychange", handleVisibilityChange);
       document.addEventListener("fullscreenchange", handleVisibilityChange);
-      alert("[nosleep] 2");
+      // alert("[nosleep] 2");
     } else if (oldIOS()) {
       this.noSleepTimer = null;
-      alert("[nosleep] 3");
+      // alert("[nosleep] 3");
     } else {
       // Set up no sleep video element
-      alert("[nosleep] 4");
+      // alert("[nosleep] 4");
       this.noSleepVideo = document.createElement("video");
 
       this.noSleepVideo.setAttribute("title", "No Sleep");
@@ -187,23 +187,23 @@ var NoSleep = function () {
           _this2._wakeLock = wakeLock;
           _this2.enabled = true;
           console.log("Wake Lock active1.");
-          alert("[nosleep] isenable 1 ");
+          // alert("[nosleep] isenable 1 ");
           _this2._wakeLock.addEventListener("release", function () {
             // ToDo: Potentially emit an event for the page to observe since
             // Wake Lock releases happen when page visibility changes.
             // (https://web.dev/wakelock/#wake-lock-lifecycle)
             console.log("Wake Lock released2.");
-            alert("[nosleep] released2  ");
+            // alert("[nosleep] released2  ");
           });
         }).catch(function (err) {
           _this2.enabled = false;
           console.error(err.name + ", " + err.message);
-          alert(err.name + ", " + err.message);
+          // alert(err.name + ", " + err.message);
           throw err;
         });
       } else if (oldIOS()) {
         this.disable();
-        alert("[nosleep] oldios  ");
+        // alert("[nosleep] oldios  ");
         console.warn("\n        NoSleep enabled for older iOS devices. This can interrupt\n        active or long-running network requests from completing successfully.\n        See https://github.com/richtr/NoSleep.js/issues/15 for more details.\n      ");
         this.noSleepTimer = window.setInterval(function () {
           if (!document.hidden) {
@@ -214,14 +214,14 @@ var NoSleep = function () {
         this.enabled = true;
         return Promise.resolve();
       } else {
-        alert("[nosleep] noSleepVideo.play  ");
+        // alert("[nosleep] noSleepVideo.play  ");
         var playPromise = this.noSleepVideo.play();
         return playPromise.then(function (res) {
           _this2.enabled = true;
           return res;
         }).catch(function (err) {
           _this2.enabled = false;
-          alert(err.name + ", " + err.message);
+          // alert(err.name + ", " + err.message);
           throw err;
         });
       }
