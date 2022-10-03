@@ -35,13 +35,16 @@
 
   <link rel="stylesheet" type="text/css" href="style.css"/>
   <script src="../plugin/NoSleep.js"></script>
+  <script src="../plugin/jquery-2.1.3.min.js"></script>
+  <!-- <script type="text/javascript" src="https://unpkg.com/swipe-up"></script> -->
+  <script src="../controller/manage.js"></script>
 </head>
-<body>
-  <script>
-    window.noSleep = new window.NoSleep();
-    // var noSleep = new NoSleep();
-  </script>
+<script>
+  window.noSleep = new window.NoSleep();
+  // var noSleep = new NoSleep();
+</script>
 
+<body>
   <div id="GameDiv" cc_exact_fit_screen="true">
       <div id="Cocos3dGameContainer">
         <canvas id="GameCanvas" oncontextmenu="event.preventDefault()" tabindex="99"></canvas>
