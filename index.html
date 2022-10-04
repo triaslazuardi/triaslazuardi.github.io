@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>test no sleep</title>
 
-    <!-- <script src="plugin/NoSleep.js"></script>
-    <script src="controller/manage.js"></script> -->
+    <!-- <script src="plugin/NoSleep.js"></script> -->
+    <script src="controller/btnmanager.js"></script>
 </head>
 <body>
     <!-- <input type="button" id="toggle" value="Wake Lock is disabled" /> -->
     <!-- <button onclick="setNoSleep()">Click me</button> -->
+    <button type="button" onclick=onOlderCocos()>Cocos 3.3.2</button>
+    <button type="button" onclick=onLatestCocos()>Cocos 3.6.0</button>
     <script>
       // alert("v4")
         // var noSleep = new NoSleep();
@@ -34,8 +36,9 @@
         // }, false);
         // setTimeout(()=>{
         //   alert("start")
-          window.location.assign("cocos/index.html");
+          // window.location.assign("cocos/index.html");
         // }, 5000);
+        
       </script>
 </body>
 </html>
