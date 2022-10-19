@@ -1,46 +1,61 @@
 System.register("chunks:///_virtual/ChooseFile.ts", ['./_rollupPluginModLoBabelHelpers.js', 'cc'], function (exports) {
   'use strict';
 
-  var _inheritsLoose, cclegacy, _decorator, Component;
+  var _inheritsLoose, _defineProperty, _assertThisInitialized, cclegacy, _decorator, Component;
 
   return {
     setters: [function (module) {
       _inheritsLoose = module.inheritsLoose;
+      _defineProperty = module.defineProperty;
+      _assertThisInitialized = module.assertThisInitialized;
     }, function (module) {
       cclegacy = module.cclegacy;
       _decorator = module._decorator;
       Component = module.Component;
     }],
     execute: function () {
-      var _dec, _class;
+      var _dec, _class, _temp;
 
       cclegacy._RF.push({}, "03ed0x1xXlHp6rlHx5E29f0", "ChooseFile", undefined);
 
       var ccclass = _decorator.ccclass,
           property = _decorator.property;
-      var ChooseFile = exports('ChooseFile', (_dec = ccclass('ChooseFile'), _dec(_class = /*#__PURE__*/function (_Component) {
+      var ChooseFile = exports('ChooseFile', (_dec = ccclass('ChooseFile'), _dec(_class = (_temp = /*#__PURE__*/function (_Component) {
         _inheritsLoose(ChooseFile, _Component);
 
         function ChooseFile() {
-          return _Component.apply(this, arguments) || this;
+          var _this;
+
+          for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+            args[_key] = arguments[_key];
+          }
+
+          _this = _Component.call.apply(_Component, [this].concat(args)) || this;
+
+          _defineProperty(_assertThisInitialized(_this), "isDonechange", false);
+
+          return _this;
         }
 
         var _proto = ChooseFile.prototype;
 
         _proto.onClickFileFromCocos = function onClickFileFromCocos() {
+          this.isDonechange = true;
           var input = document.createElement('input');
           input.type = 'file';
           input.click();
           console.log("input 1 >> ", input);
 
           input.onchange = function () {
+            // if(this.isDonechange) return
+            // this.isDonechange = true;
             var file = input.files;
-            alert("input get file >> " + file[0]);
+            console.log("is change file : ", file); // alert("is change file : " + file);
           };
         };
 
         return ChooseFile;
-      }(Component)) || _class));
+      }(Component), _temp)) || _class));
 
       cclegacy._RF.pop();
     }
@@ -492,7 +507,7 @@ System.register("chunks:///_virtual/manager2.ts", ['./_rollupPluginModLoBabelHel
             _this3.changeColor();
           }, 1000);
           setTimeout(function () {
-            _this3.scriptGiftManager.startGiftAnimation();
+            if (_this3.scriptGiftManager != null) _this3.scriptGiftManager.startGiftAnimation();
           }, 1000);
         };
 
