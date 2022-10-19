@@ -1,0 +1,57 @@
+{
+    "importBase": "import",
+    "nativeBase": "native",
+    "name": "main",
+    "deps": [],
+    "uuids": [
+        "0e36b1930",
+        "20835ba4-6145-4fbc-a58a-051ce700aa3e",
+        "20835ba4-6145-4fbc-a58a-051ce700aa3e@6c48a",
+        "20835ba4-6145-4fbc-a58a-051ce700aa3e@f9941",
+        "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8",
+        "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8@6c48a",
+        "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8@f9941",
+        "951249e0-9f16-456d-8b85-a6ca954da16b",
+        "951249e0-9f16-456d-8b85-a6ca954da16b@6c48a",
+        "951249e0-9f16-456d-8b85-a6ca954da16b@f9941",
+        "ab5e41c0-ebc4-43dc-99f1-d1e212af7b78",
+        "b730527c-3233-41c2-aaf7-7cdab58f9749",
+        "b730527c-3233-41c2-aaf7-7cdab58f9749@6c48a",
+        "b730527c-3233-41c2-aaf7-7cdab58f9749@f9941",
+        "fd8ec536-a354-4a17-9c74-4f3883c378c8"
+    ],
+    "paths": {
+        "fd8ec536-a354-4a17-9c74-4f3883c378c8": [
+            "db:/internal/default_renderpipeline/builtin-forward",
+            "cc.RenderPipeline"
+        ]
+    },
+    "scenes": {
+        "db://assets/choosefile.scene": "ab5e41c0-ebc4-43dc-99f1-d1e212af7b78"
+    },
+    "packs": {
+        "0e36b1930": [
+            "20835ba4-6145-4fbc-a58a-051ce700aa3e",
+            "20835ba4-6145-4fbc-a58a-051ce700aa3e@6c48a",
+            "20835ba4-6145-4fbc-a58a-051ce700aa3e@f9941",
+            "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8",
+            "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8@6c48a",
+            "544e49d6-3f05-4fa8-9a9e-091f98fc2ce8@f9941",
+            "951249e0-9f16-456d-8b85-a6ca954da16b",
+            "951249e0-9f16-456d-8b85-a6ca954da16b@6c48a",
+            "951249e0-9f16-456d-8b85-a6ca954da16b@f9941",
+            "ab5e41c0-ebc4-43dc-99f1-d1e212af7b78",
+            "b730527c-3233-41c2-aaf7-7cdab58f9749",
+            "b730527c-3233-41c2-aaf7-7cdab58f9749@6c48a",
+            "b730527c-3233-41c2-aaf7-7cdab58f9749@f9941",
+            "fd8ec536-a354-4a17-9c74-4f3883c378c8"
+        ]
+    },
+    "versions": {
+        "import": [],
+        "native": []
+    },
+    "redirect": [],
+    "debug": true,
+    "extensionMap": {}
+}
