@@ -53,7 +53,9 @@
 <script src="src/import-map.json" type="systemjs-importmap" charset="utf-8"> </script>
 
 <script>
+    alert("before import scenet to open")
     System.import('./index.js').catch(function(err) { console.error(err); })
+    alert("after import scenet to open")
 </script>
 
 </body>
