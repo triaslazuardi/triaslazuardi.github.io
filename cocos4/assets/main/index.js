@@ -40,11 +40,11 @@ System.register("chunks:///_virtual/ChooseFile.ts", ['./_rollupPluginModLoBabelH
         var _proto = ChooseFile.prototype;
 
         _proto.onClickFileFromCocos = function onClickFileFromCocos() {
-          console.log("add accept");
+          console.log("add accept v2");
           this.isDonechange = true;
           var input = document.createElement('input');
           input.type = 'file';
-          input.accept = 'image/png, image/jpeg, image/jpg, image/gift';
+          input.accept = 'image/png, image/jpeg, image/jpg, image/gif';
           input.click();
           console.log("input 1 >> ", input);
 
