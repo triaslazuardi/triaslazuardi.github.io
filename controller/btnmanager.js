@@ -14,6 +14,10 @@ function onChooseFileCocos() { //3.3.2
     window.location.assign("cocos4/index.html");
 }
 
+function onDrawcallCocos() { //3.3.2
+    window.location.assign("cocos5/index.html");
+}
+
 function onProjectFile() {
     window.location.assign("https://github.com/triaslazuardi/cocostes");
 }

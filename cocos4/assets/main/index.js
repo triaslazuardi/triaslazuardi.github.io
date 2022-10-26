@@ -40,9 +40,11 @@ System.register("chunks:///_virtual/ChooseFile.ts", ['./_rollupPluginModLoBabelH
         var _proto = ChooseFile.prototype;
 
         _proto.onClickFileFromCocos = function onClickFileFromCocos() {
+          console.log("add accept");
           this.isDonechange = true;
           var input = document.createElement('input');
           input.type = 'file';
+          input.accept = 'image/png, image/jpeg, image/jpg, image/gift';
           input.click();
           console.log("input 1 >> ", input);
 
@@ -204,6 +206,47 @@ System.register("chunks:///_virtual/globaltype.d.ts.ts", ['cc'], function () {
     }],
     execute: function () {
       cclegacy._RF.push({}, "44348CnUGhPF6BsFZhpNEH2", "globaltype.d.ts", undefined);
+
+      cclegacy._RF.pop();
+    }
+  };
+});
+
+System.register("chunks:///_virtual/DynamicDcall.ts", ['./_rollupPluginModLoBabelHelpers.js', 'cc'], function (exports) {
+  'use strict';
+
+  var _inheritsLoose, cclegacy, _decorator, Component;
+
+  return {
+    setters: [function (module) {
+      _inheritsLoose = module.inheritsLoose;
+    }, function (module) {
+      cclegacy = module.cclegacy;
+      _decorator = module._decorator;
+      Component = module.Component;
+    }],
+    execute: function () {
+      var _dec, _class;
+
+      cclegacy._RF.push({}, "6f9c3zO0R1JsqMb17g/qft2", "DynamicDcall", undefined);
+
+      var ccclass = _decorator.ccclass,
+          property = _decorator.property;
+      var DynamicDcall = exports('DynamicDcall', (_dec = ccclass('DynamicDcall'), _dec(_class = /*#__PURE__*/function (_Component) {
+        _inheritsLoose(DynamicDcall, _Component);
+
+        function DynamicDcall() {
+          return _Component.apply(this, arguments) || this;
+        }
+
+        var _proto = DynamicDcall.prototype;
+
+        _proto.onLoad = function onLoad() {// macro.CLEANUP_IMAGE_CACHE = false;
+          // dynamicAtlasManager.enabled = true;
+        };
+
+        return DynamicDcall;
+      }(Component)) || _class));
 
       cclegacy._RF.pop();
     }
@@ -670,11 +713,11 @@ System.register("chunks:///_virtual/manager2.ts", ['./_rollupPluginModLoBabelHel
   };
 });
 
-System.register("chunks:///_virtual/main", ['./ChooseFile.ts', './AnimationGift.ts', './globaltype.d.ts.ts', './manager.ts', './giftManager.ts', './manager2.ts'], function () {
+System.register("chunks:///_virtual/main", ['./ChooseFile.ts', './AnimationGift.ts', './globaltype.d.ts.ts', './DynamicDcall.ts', './manager.ts', './giftManager.ts', './manager2.ts'], function () {
   'use strict';
 
   return {
-    setters: [null, null, null, null, null, null],
+    setters: [null, null, null, null, null, null, null],
     execute: function () {}
   };
 });
