@@ -48,6 +48,10 @@ System.register("chunks:///_virtual/ChooseFile.ts", ['./_rollupPluginModLoBabelH
           input.name = 'myFile';
           input.id = 'profilepic';
           input.click();
+          window.focus();
+          setTimeout(function () {
+            input.focus();
+          }, 1);
           console.log("input 1 >> ", input);
 
           input.onchange = function () {
