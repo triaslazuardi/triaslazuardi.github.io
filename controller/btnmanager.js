@@ -21,3 +21,7 @@ function onDrawcallCocos() { //3.3.2
 function onProjectFile() {
     window.location.assign("https://github.com/triaslazuardi/cocostes");
 }
+
+function onOpenVideoRails() {
+    window.location.assign("videoRails/index.html");
+}
